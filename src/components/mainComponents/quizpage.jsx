@@ -20,7 +20,7 @@ const Quizpage = () => {
 
         const getQuestions = async () => {
             try {
-                const { data } = await axios.get('http://localhost:8000/api/quiz');
+                const { data } = await axios.get('https://quizerra.onrender.com/api/quiz');
                 setQuestions(data.questions);
                 setAnswers(new Array(data.questions.length).fill(''));
                 let answer = data.questions.map((i) => i.answer);
