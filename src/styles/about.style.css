@@ -1,0 +1,45 @@
+.aboutContainer {
+    height: auto;
+    width: 75rem;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+    padding: 20px;
+}
+
+.aboutheading {
+    font-size: 2em;
+    letter-spacing: 5px;
+    cursor:default;
+    margin-top: 5vh;
+    color:hsl(261deg 80% 48%);
+}
+
+.abouttext {
+    font-size: 1em;
+    padding-left: 10px;
+    text-justify: newspaper;
+}
+
+.abouttext img{
+    position: relative;
+    height:150px;
+    width:200px;
+    word-wrap: normal;
+}
+
+
+@media only screen and (max-width: 550px) {
+    .aboutContainer {
+        width:80vw;
+        padding:5px;
+    }
+
+
+}
+
+

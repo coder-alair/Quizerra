@@ -1,0 +1,182 @@
+.contactuscontainer {
+    height: auto;
+    width: 75rem;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.contactusheading {
+    font-size: 2em;
+    cursor: default;
+    margin-top: 5vh;
+    color: hsl(261deg 80% 48%);
+    letter-spacing: 5px;
+}
+
+
+.contactusform {
+    padding: 20px;
+}
+
+.contactusForm {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.cardcontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70rem;
+
+    height: 60vh;
+    flex-direction: column;
+    gap: 5vh;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 16px 16px 32px white,
+        -16px -16px 32px #fefefe;
+}
+
+.inputBox,
+.inputBox1 {
+    position: relative;
+    width: 40rem;
+}
+
+.inputBox input,
+.inputBox1 input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid hsl(261deg 80% 48%);
+    border-bottom: 2px solid hsl(261deg 80% 48%);
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: hsl(261deg 80% 48%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    transform: translateX(30rem) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: hsl(261deg 80% 48%);
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+    transform: translateX(30rem) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: hsl(261deg 80% 48%);
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+    border: 2px solid hsl(261deg 80% 48%);
+    border-radius: 8px;
+}
+
+.enter {
+    height: 8vh;
+    width: 15rem;
+    border-radius: 5px;
+    border: 2px solid hsl(261deg 80% 48%);
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-bottom: 3em;
+    margin: auto;
+    color: hsl(261deg 80% 48%);
+}
+
+.enter:hover {
+    background-color: hsl(261deg 80% 48%);
+    color: white;
+}
+
+@media only screen and (max-width: 550px) {
+    .contactuscontainer {
+        width: 70vw;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .cardcontact {
+        width: 50%;
+        margin: auto;
+
+    }
+
+    .inputBox,
+    .inputBox1 {
+        position: relative;
+        width: 60vw;
+    }
+
+    .inputBox1 input:valid~span,
+    .inputBox1 input:focus~span {
+        transform: translateX(40vw) translateY(-15px);
+        font-size: 0.8em;
+        padding: 5px 10px;
+        background: hsl(261deg 80% 48%);
+        letter-spacing: 0.2em;
+        color: #fff;
+        border: 2px;
+    }
+
+    .inputBox input:valid~span,
+    .inputBox input:focus~span {
+        transform: translateX(40vw) translateY(-15px);
+        font-size: 0.8em;
+        padding: 5px 10px;
+        background: hsl(261deg 80% 48%);
+        letter-spacing: 0.2em;
+        color: #fff;
+        border: 2px;
+    }
+
+}
